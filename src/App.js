@@ -26,8 +26,6 @@ function App() {
   const [data, setData] = useState([]);
   const [temperatureOne, setDataTemperatureOne] = useState([]);
   const [temperatureTwo, setDataTemperatureTwo] = useState([]);
-  let temperature1 = 0;
-  let temperature2 = 0;
 
   useEffect(() => {
     const ws = new WebSocket(SOCKET_URL);
@@ -71,10 +69,12 @@ function App() {
     const closeWs = () => {
       ws.close();
     };
-    console.log(1, temperature1, temperature2);
     setTimeout(closeWs, SOCKET_CLOSING_TIMEOUT);
-  }, [temperature1, temperature2]);
-  console.log(2, temperature1, temperature2);
+  }, []);
+
+
+
+  
   return (
     <>
       <div className="row">
