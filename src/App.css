@@ -21,8 +21,14 @@
 .temperature{
   display: flex;
   flex-direction: row;
+ 
 }
-
+ .one{
+    color: #8884d8;
+  }
+  .two{
+    color: #82ca9d;
+  }
 .child-strong{
   display: flex;
   width: 100%;;

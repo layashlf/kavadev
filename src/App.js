@@ -74,15 +74,17 @@ function App() {
 
 
 
-  
+
   return (
     <>
       <div className="row">
         <div className="child-div">
-          ID 1<div className="temperature">Temp {temperatureOne} c</div>
+        <label><strong className='child-strong'>ID 1 </strong></label>
+         <div className="temperature one" >Temp {temperatureOne} c</div>
         </div>
         <div className="child-div">
-          ID 2 <div className="temperature">Temp {temperatureTwo} c</div>
+        <label><strong className='child-strong'>ID 2 </strong></label> 
+        <div className="temperature two">Temp {temperatureTwo} c</div>
         </div>
       </div>
       <ResponsiveContainer width="100%" height={400}>
@@ -98,7 +100,7 @@ function App() {
             stroke="#8884d8"
             activeDot={{ r: 8 }}
           />
-          <Line type="monotone" dataKey="temperature2" stroke="#82ca9d" />
+          <Line type="linear" dataKey="temperature2" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
       <ToastContainer />
