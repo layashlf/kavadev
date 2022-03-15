@@ -66,10 +66,10 @@ function App() {
       });
     };
 
-    const closeWs = () => {
+    const closeWebsocket = () => {
       ws.close();
     };
-    setTimeout(closeWs, SOCKET_CLOSING_TIMEOUT);
+    setTimeout(closeWebsocket, SOCKET_CLOSING_TIMEOUT);
   }, []);
 
 
