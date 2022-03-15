@@ -1,6 +1,6 @@
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
-import "../node_modules/react-vis/dist/style.css";
+// import "../node_modules/react-vis/dist/style.css";
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import {
@@ -36,6 +36,7 @@ function App() {
       }
     };
     ws.onclose = (event) => {
+      console.log(event)
       if (event.type === serverStatus.CLOSE) {
         toast.dismiss();
         toast.error(SERVER_DISCONNECTED_MESSAGE);
@@ -69,7 +70,9 @@ function App() {
     const closeWebsocket = () => {
       ws.close();
     };
+
     setTimeout(closeWebsocket, SOCKET_CLOSING_TIMEOUT);
+
   }, []);
 
 
