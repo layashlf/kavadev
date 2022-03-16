@@ -74,7 +74,7 @@ function App() {
             setDataTemperatureTwo(element.temperature);
           }
           if ("temperature1" in graphData && "temperature2" in graphData) {
-            console.log(parsedData, graphData);
+            
             setData((currentData) => [...currentData, graphData]);
           }
         }
@@ -121,7 +121,7 @@ function App() {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis  type="number" />
+          <XAxis  type="category" />
           <YAxis  datakey="dataValue" label={"Data"} />
           <Tooltip />
           <Legend />
