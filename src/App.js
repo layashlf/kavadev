@@ -24,7 +24,6 @@ import {
 
 function App() {
   const [data, setData] = useState([]);
-  const [dataTwo, setDataTwo] = useState([]);
   const [temperatureOne, setDataTemperatureOne] = useState([]);
   const [temperatureTwo, setDataTemperatureTwo] = useState([]);
 

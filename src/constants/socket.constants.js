@@ -1,5 +1,5 @@
 export const SOCKET_URL = "ws://localhost:8999";
-export const SOCKET_CLOSING_TIMEOUT = 15000;
+export const SOCKET_CLOSING_TIMEOUT = 600000;
 
 export const SERVER_CONNECTED_MESSAGE = "Server Connected";
 export const SERVER_DISCONNECTED_MESSAGE = "Server Disconnected";
